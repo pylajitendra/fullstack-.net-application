@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|c:\\users\\administrator\\desktop\\rnprojects\\customercrudapi\\customercrudapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|solutionrelative:customercrudapi\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|c:\\users\\administrator\\desktop\\rnprojects\\customercrudapi\\customercrudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|solutionrelative:customercrudapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|c:\\users\\administrator\\desktop\\rnprojects\\customercrudapi\\customercrudapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|solutionrelative:customercrudapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|c:\\users\\administrator\\desktop\\rnprojects\\customercrudapi\\customercrudapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|solutionrelative:customercrudapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|c:\\users\\administrator\\desktop\\rnprojects\\customercrudapi\\customercrudapi\\customercrudapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|solutionrelative:customercrudapi\\customercrudapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|c:\\users\\administrator\\desktop\\rnprojects\\customercrudapi\\customercrudapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{580DE680-2F0B-4C1E-8AF1-0CDA9F6ED793}|CustomerCrudApi\\CustomerCrudApi.csproj|solutionrelative:customercrudapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "CustomerCrudApi\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "CustomerCrudApi\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T06:30:32.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\appsettings.json",
+              "RelativeDocumentMoniker": "CustomerCrudApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\appsettings.json",
+              "RelativeToolTip": "CustomerCrudApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-04T06:24:25.818Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Program.cs",
+              "RelativeDocumentMoniker": "CustomerCrudApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Program.cs",
+              "RelativeToolTip": "CustomerCrudApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T06:22:36.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CustomerCrudApi\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CustomerCrudApi\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T06:18:18.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerCrudApi.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\CustomerCrudApi.csproj",
+              "RelativeDocumentMoniker": "CustomerCrudApi\\CustomerCrudApi.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\CustomerCrudApi.csproj",
+              "RelativeToolTip": "CustomerCrudApi\\CustomerCrudApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-04T06:17:16.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "CustomerCrudApi\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\RNPROJECTS\\CustomerCrudApi\\CustomerCrudApi\\Models\\Customer.cs",
+              "RelativeToolTip": "CustomerCrudApi\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-04T06:16:20.717Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
