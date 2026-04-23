@@ -1,12 +1,7 @@
-# ASP.NET Core (.NET Framework)
-
 trigger:
-- main
-
-pool:
-  name: Default
-  demands:
-    - Agent.Name -equals my-vm-agent
+  branches:
+    include:
+      - main
 
 variables:
   solution: '**/*.sln'
@@ -14,46 +9,41 @@ variables:
   buildConfiguration: 'Release'
   artifactName: 'drop'
 
-steps:
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    pool:
+      name: Default
+      demands:
+        - Agent.Name -equals my-vm-agent
 
-# Install NuGet
-- task: NuGetToolInstaller@1
+    steps:
+    - task: NuGetToolInstaller@1
 
-# Restore packages
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '$(solution)'
+    - task: NuGetCommand@2
+      inputs:
+        restoreSolution: '$(solution)'
 
-# Build solution
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    msbuildArgs: >
-      /p:DeployOnBuild=true
-      /p:WebPublishMethod=Package
-      /p:PackageAsSingleFile=true
-      /p:SkipInvalidConfigurations=true
-      /p:DesktopBuildPackageLocation="$(Build.ArtifactStagingDirectory)\WebApp.zip"
-      /p:DeployIisAppPath="Default Web Site"
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    - task: VSBuild@1
+      inputs:
+        solution: '$(solution)'
+        msbuildArgs: >
+          /p:DeployOnBuild=true
+          /p:WebPublishMethod=Package
+          /p:PackageAsSingleFile=true
+          /p:SkipInvalidConfigurations=true
+          /p:DesktopBuildPackageLocation="$(Build.ArtifactStagingDirectory)\WebApp.zip"
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
 
-# Run tests
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    - task: VSTest@2
+      inputs:
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
 
-# ✅ Copy files to staging (important for artifact)
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '$(Build.ArtifactStagingDirectory)'
-    Contents: '**'
-    TargetFolder: '$(Build.ArtifactStagingDirectory)'
-
-# ✅ Publish artifact (THIS is what you're missing)
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: '$(artifactName)'
-    publishLocation: 'Container'
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: '$(artifactName)'
+        publishLocation: 'Container'
