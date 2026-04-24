@@ -16,9 +16,7 @@ stages:
   jobs:
   - job: BuildJob
     pool:
-      name: Default
-      demands:
-        - Agent.Name -equals my-vm-agent
+      vmImage: 'windows-latest'   # ✅ changed
 
     steps:
     - task: NuGetToolInstaller@1
@@ -62,7 +60,7 @@ stages:
     environment: 'production'
 
     pool:
-      name: Default
+      vmImage: 'windows-latest'   # ✅ changed here too
 
     strategy:
       runOnce:
