@@ -28,7 +28,7 @@ stages:
     - task: VSBuild@1
       inputs:
         solution: '$(solution)'
-        vsVersion: 'latest'   # ✅ ADDED
+        vsVersion: 'latest'
         msbuildArgs: >
           /p:DeployOnBuild=true
           /p:WebPublishMethod=Package
@@ -61,7 +61,7 @@ stages:
     environment: 'production'
 
     pool:
-      vmImage: 'windows-latest'
+      name: Default   # ✅ FIXED (use your self-hosted agent)
 
     strategy:
       runOnce:
