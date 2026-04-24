@@ -18,7 +18,7 @@ stages:
   jobs:
   - job: BuildJob
     pool:
-      name: Default   # ✅ self-hosted agent
+      name: Default
 
     steps:
     - task: NuGetToolInstaller@1
@@ -39,7 +39,6 @@ stages:
         platform: '$(buildPlatform)'
         configuration: '$(buildConfiguration)'
 
-    # ✅ Archive published files into ZIP
     - task: ArchiveFiles@2
       inputs:
         rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
@@ -73,7 +72,7 @@ stages:
     environment: 'production'
 
     pool:
-      name: Default   # ✅ self-hosted agent
+      name: Default
 
     strategy:
       runOnce:
@@ -86,5 +85,5 @@ stages:
             inputs:
               azureSubscription: 'azure-conn'
               appType: 'webApp'
-              appName: 'jitendrapyla'
+              appName: 'jitendrapyla-gvh2f3eugbfsdyhp'   # ✅ FIXED
               package: '$(Pipeline.Workspace)/drop/WebApp.zip'
