@@ -16,7 +16,7 @@ stages:
   jobs:
   - job: BuildJob
     pool:
-      vmImage: 'windows-latest'   # ✅ changed
+      vmImage: 'windows-latest'
 
     steps:
     - task: NuGetToolInstaller@1
@@ -28,6 +28,7 @@ stages:
     - task: VSBuild@1
       inputs:
         solution: '$(solution)'
+        vsVersion: 'latest'   # ✅ ADDED
         msbuildArgs: >
           /p:DeployOnBuild=true
           /p:WebPublishMethod=Package
@@ -60,7 +61,7 @@ stages:
     environment: 'production'
 
     pool:
-      vmImage: 'windows-latest'   # ✅ changed here too
+      vmImage: 'windows-latest'
 
     strategy:
       runOnce:
