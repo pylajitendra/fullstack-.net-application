@@ -10,6 +10,8 @@ variables:
   artifactName: 'drop'
 
 stages:
+
+# ✅ BUILD STAGE (CI)
 - stage: Build
   jobs:
   - job: BuildJob
@@ -47,3 +49,31 @@ stages:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
         ArtifactName: '$(artifactName)'
         publishLocation: 'Container'
+
+
+# ✅ DEPLOY STAGE (CD)
+- stage: Deploy
+  displayName: 'Deploy to Azure App Service'
+  dependsOn: Build
+
+  jobs:
+  - deployment: DeployWebApp
+    displayName: 'Deploy Web App'
+    environment: 'production'
+
+    pool:
+      name: Default
+
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - download: current
+
+          - task: AzureWebApp@1
+            displayName: 'Deploy to App Service'
+            inputs:
+              azureSubscription: 'azure-conn'
+              appType: 'webApp'
+              appName: 'jitendrapyla'
+              package: '$(Pipeline.Workspace)/drop/WebApp.zip'
